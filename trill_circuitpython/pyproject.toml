@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trill-circuitpython"
+version = "1.0.0"
+description = "CircuitPython library for Bela's Trill touch sensors"
+readme = "README.md"
+license = {text = "GPL-3.0-or-later"}
+authors = [
+    {name = "H. Groefsema", email = "your-email@example.com"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Hardware",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "adafruit-circuitpython-busdevice",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-username/trill-circuitpython"
+Repository = "https://github.com/your-username/trill-circuitpython"
+Issues = "https://github.com/your-username/trill-circuitpython/issues"
+
+[tool.setuptools]
+packages = ["trill_circuitpython"]
